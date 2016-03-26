@@ -1,0 +1,82 @@
+@import '../../stylesheets/color.css';
+
+.inbox {
+  width: 400px;
+  min-width: 400px;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid var(--border-color);
+  border-right: 1px solid var(--border-color);
+  background: var(--light-silver);
+
+  display: flex;
+  flex-flow: column;
+}
+
+.inbox-item {
+  height: 200px;
+  padding: 20px;
+  cursor: pointer;
+  transition: background-color 200ms ease-in-out;
+  border-bottom: 1px solid var(--border-color);
+
+  flex: 1;
+  &:hover {
+    background-color: var(--active-message);
+  }
+  &:last-child {
+    border-bottom: 0;
+  }
+}
+
+.inbox-sender {
+  display: flex;
+  font-size: 12px;
+
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.inbox-title {
+  display: flex;
+
+  align-items: center;
+  flex-flow: row-reverse wrap;
+  justify-content: space-between;
+  h4 {
+    margin: 0;
+    margin-top: 10px;
+  }
+}
+
+.label-red {
+  composes: item-red from "stylesheets/messageLabel.css";
+}
+
+.label-blue {
+  composes: item-blue from "stylesheets/messageLabel.css";
+}
+
+.label-yellow {
+  composes: item-yellow from "stylesheets/messageLabel.css";
+}
+
+.label-green {
+  composes: item-green from "stylesheets/messageLabel.css";
+}
+
+.sender-name {
+  font-weight: 600;
+}
+
+.sender-date {
+  font-weight: 600;
+  span {
+    opacity: 0.5;
+  }
+}
+
+.sender-label {
+  margin-right: 10px;
+  font-size: 14px;
+}

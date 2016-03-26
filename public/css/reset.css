@@ -1,0 +1,96 @@
+/* Basic */
+@-ms-viewport {
+  width: device-width;
+}
+body {
+  background: #f5f7fa;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 300;
+  color: #52575c;
+  line-height: 1.75em;
+  font-size: 14pt;
+}
+body.is-loading * {
+  -moz-transition: none !important;
+  -webkit-transition: none !important;
+  -ms-transition: none !important;
+  transition: none !important;
+  -moz-animation: none !important;
+  -webkit-animation: none !important;
+  -ms-animation: none !important;
+  animation: none !important;
+}
+input, textarea, select {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 300;
+  color: #52575c;
+  line-height: 1.75em;
+  font-size: 15pt;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 300;
+  color: #52575c;
+}
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+  color: inherit;
+  text-decoration: none;
+}
+h2 {
+  font-size: 2em;
+  line-height: 1.25em;
+}
+h3 {
+  font-size: 1.5em;
+  line-height: 1.5em;
+}
+a {
+  -moz-transition: color 0.25s ease-in-out, border-color 0.25s ease-in-out, background-color 0.25s ease-in-out;
+  -webkit-transition: color 0.25s ease-in-out, border-color 0.25s ease-in-out, background-color 0.25s ease-in-out;
+  -ms-transition: color 0.25s ease-in-out, border-color 0.25s ease-in-out, background-color 0.25s ease-in-out;
+  transition: color 0.25s ease-in-out, border-color 0.25s ease-in-out, background-color 0.25s ease-in-out;
+  color: inherit;
+  text-decoration: none;
+  border-bottom: dotted 1px #62676c;
+}
+a:hover {
+  color: #f35858;
+  border-bottom-color: rgba(255, 255, 255, 0);
+}
+strong, b {
+  font-weight: 400;
+  color: #42474c;
+}
+em, i {
+  font-style: italic;
+}
+sub {
+  position: relative;
+  top: 0.5em;
+  font-size: 0.8em;
+}
+sup {
+  position: relative;
+  top: -0.5em;
+  font-size: 0.8em;
+}
+hr {
+  border: 0;
+  border-top: solid 1px #c2c7cc;
+}
+blockquote {
+  border-left: solid 0.5em #c2c7cc;
+  padding: 1em 0 1em 2em;
+  font-style: italic;
+}
+p, ul, ol, dl, table {
+  margin-bottom: 1.5em;
+}
+br.clear {
+  clear: both;
+}
+.features {
+  margin-bottom: 1.5em;
+}
+.feature {
+  text-align: center;
+}

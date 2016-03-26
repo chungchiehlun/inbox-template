@@ -1,0 +1,117 @@
+@import '../../stylesheets/color.css';
+
+.sidebar {
+  display: flex;
+  padding-top: 20px;
+  background-color: var(--midnight);
+  /*
+    flex items attribute:
+    flex-grow : default = 0
+    flex-shrink : default = 1
+    flex-basis : default = auto
+  */
+  flex: 1 0 100px;
+  align-items: center;
+  justify-content: space-between;
+  flex-flow: column wrap;
+}
+
+.compose {
+  padding: 10px 15px;
+  transition: background-color 200ms ease-in-out;
+  color: white;
+  border-radius: 3px;
+  background-color: var(--blue);
+  font-size: 20px;
+  composes: defaultBtn from "stylesheets/button.css";
+  &:hover {
+    background-color: var(--blue);
+  }
+  &:active {
+    background-color: var(--blue);
+  }
+}
+
+.categories {
+  display: flex;
+  margin-top: 50px;
+
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+  li {
+    position: relative;
+  }
+  i {
+    margin-bottom: 30px;
+    cursor: pointer;
+    transition: opacity 300ms ease-in-out;
+    opacity: 0.6;
+    color: white;
+    font-size: 20px;
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+
+.notification {
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  display: flex;
+  width: 30px;
+  height: 30px;
+  color: white;
+  border: 3px solid var(--midnight);
+  border-radius: 50%;
+  background-color: var(--love);
+  font-size: 12px;
+  font-weight: 600;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.label {
+  margin: 20px 0;
+}
+
+.label-red {
+  composes: label;
+  composes: item-red from "stylesheets/messageLabel.css";
+}
+
+.label-blue {
+  composes: label;
+  composes: item-blue from "stylesheets/messageLabel.css";
+}
+
+.label-yellow {
+  composes: label;
+  composes: item-yellow from "stylesheets/messageLabel.css";
+}
+
+.label-green {
+  composes: label;
+  composes: item-green from "stylesheets/messageLabel.css";
+}
+
+.user-profile {
+  display: flex;
+  padding-bottom: 20px;
+
+  flex-flow: column wrap;
+  align-items: center;
+  i {
+    margin-top: 20px;
+    cursor: pointer;
+    transition: opacity 300ms ease-in-out;
+    opacity: 0.6;
+    color: white;
+    font-size: 20px;
+    &:hover {
+      opacity: 1;
+    }
+  }
+}

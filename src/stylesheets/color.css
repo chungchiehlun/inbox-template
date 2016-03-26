@@ -1,0 +1,18 @@
+:root {
+  /* global: accessible everywhere */
+  /* Set color variable */
+  --grey: #f0f0f0;
+  --blue-grey: #D4DBE2;
+  --midnight: #2a2f39;
+  --love: #ea2e49;
+  --blue: #2196f3;
+  --yellow: #ffeb3b;
+  --red: #f44336;
+  --green: #4caf50;
+  --light-grey: #e9e9e9;
+  --paragraph: #696969;
+  --active-message: #edf5fd;
+  --light-silver: #f6f7f8;
+  --toolbar: --light-silver;
+  --border-color: #d9e0e2;
+}

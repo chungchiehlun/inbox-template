@@ -1,0 +1,115 @@
+@import '../../stylesheets/color.css';
+
+.overlay {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  visibility: hidden;
+  transition: visibility 800ms ease-in-out, opacity 500ms ease-in-out;
+  opacity: 0;
+  background: rgba(0,0,0,0.7);
+
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay-active {
+  composes: overlay;
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal {
+  width: 520px;
+  border-radius: 3px;
+  background-color: white;
+  box-shadow: 0px 5px 20px rgba(0,0,0,0.3);
+}
+
+.title {
+  position: relative;
+  padding: 20px;
+  text-align: center;
+}
+
+.form {
+  input,
+  textarea {
+    width: 100%;
+    margin: 5px 0;
+    padding: 10px;
+    border: 1px solid var(--light-grey);
+    border-radius: 3px;
+    outline: none;
+    &:focus {
+      border: 1px solid var(--blue);
+    }
+  }
+  textarea {
+    resize: vertical;
+  }
+}
+
+.body {
+  padding: 20px;
+  border-top: 1px solid var(--border-color);
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  background-color: var(--light-silver);
+}
+
+.button {
+  padding-top: 10px;
+  text-align: right;
+}
+
+.btnVal {
+  padding: 5px 20px;
+  color: white;
+  border-radius: 3px;
+  background-color: var(--blue);
+  composes: defaultBtn from 'stylesheets/button';
+  &:hover {
+    background-color: var(--blue);
+  }
+  &:active {
+    background-color: var(--blue);
+  }
+}
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+  transition: opacity 200ms ease-in-out;
+  &:hover {
+    opacity: 0.5;
+  }
+  &:after {
+    position: absolute;
+    top: 7px;
+    right: 0px;
+    width: 15px;
+    height: 2px;
+    content: "";
+    transform: rotate(45deg);
+    background-color: #333333;
+  }
+  &:before {
+    position: absolute;
+    top: 7px;
+    right: 0px;
+    width: 15px;
+    height: 2px;
+    content: "";
+    transform: rotate(-45deg);
+    background-color: #333333;
+  }
+}
