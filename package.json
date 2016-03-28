@@ -4,7 +4,7 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "test": "karma start"
+    "test": "node_modules/karma/bin/karma start"
   },
   "author": "chungchiehlun",
   "license": "MIT",
