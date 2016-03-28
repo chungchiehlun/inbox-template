@@ -44,7 +44,7 @@ var configuration = {
   // available reporters: https://npmjs.org/browse/keyword/karma-reporter
   reporters: ['spec', 'coverage'],
   coverageReporter: {
-    type: 'text'
+    type: 'text-summary'
   },
 
 
