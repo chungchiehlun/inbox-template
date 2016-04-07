@@ -35,3 +35,6 @@ I saw an elegant mail template from [codepen](http://codepen.io/romamilkovic/ful
 * isparta-loader
 * enzyme
 * react-addons-test-utils
+
+### ESLint
+* [rules: semi](http://eslint.org/docs/rules/semi)

@@ -1,4 +1,4 @@
-import React, {Component} from 'react'
+import React from 'react'
 import CSSModules from 'react-css-modules'
 import styles from './index.css'
 import Toolbar from 'components/toolbar'
@@ -8,22 +8,16 @@ import Message from 'components/message'
 import Overlay from 'components/overlay'
 import 'stylesheets/basic.css'
 
+const App = () => (
+  <div styleName="window">
+    <Toolbar />
+    <div styleName="content">
+      <Overlay />
+      <Sidebar />
+      <Inbox />
+      <Message />
+    </div>
+  </div>
+)
 
-@CSSModules(styles)
-class App extends Component {
-  render() {
-    return (
-      <div styleName="window">
-        <Toolbar />
-        <div styleName="content">
-          <Overlay/>
-          <Sidebar/>
-          <Inbox/>
-          <Message/>
-        </div>
-      </div>
-    );
-  }
-}
-
-export default App
+export default CSSModules(App, styles)
