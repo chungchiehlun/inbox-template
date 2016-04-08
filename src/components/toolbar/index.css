@@ -46,6 +46,7 @@
     outline: none;
   }
 }
+
 .button {
   height: 27px;
   max-height: 27px;
@@ -64,4 +65,8 @@
   &:active {
     background-color: var(--love);
   }
+}
+
+.searchBtn::before {
+  font-awesome: search;
 }

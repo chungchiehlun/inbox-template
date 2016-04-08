@@ -11,7 +11,7 @@ const Inbox = () => (
           </a>
         </div>
         <div styleName="sender-date">
-          <i styleName="sender-label" className="fa fa-paperclip" />
+          <i  styleName="paperclip" />
           <span>
             Right now
           </span>
@@ -33,7 +33,7 @@ const Inbox = () => (
           </a>
         </div>
         <div styleName="sender-date">
-          <i styleName="sender-label" className="fa fa-paperclip" />
+          <i  styleName="paperclip" />
           <span>
             Yesterday, 12:42pm
           </span>
@@ -55,7 +55,7 @@ const Inbox = () => (
           </a>
         </div>
         <div styleName="sender-date">
-          <i styleName="sender-label" className="fa fa-paperclip" />
+          <i  styleName="paperclip" />
           <span>
             2 days ago, 08:32am
           </span>
@@ -78,7 +78,7 @@ const Inbox = () => (
           </a>
         </div>
         <div styleName="sender-date">
-          <i styleName="sender-label" className="fa fa-paperclip" />
+          <i  styleName="paperclip" />
           <span>
             A month ago, 01:02pm
           </span>

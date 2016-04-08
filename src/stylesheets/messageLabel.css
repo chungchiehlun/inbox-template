@@ -9,23 +9,23 @@
 .item-red {
   composes: item;
   border: 2px solid var(--love);
-  background-color: rgba(var(--love), 0.5);
+  background-color: hexa(var(--love), 0.5);
 }
 
 .item-blue {
   composes: item;
   border: 2px solid var(--blue);
-  background-color: rgba(var(--blue), 0.5);
+  background-color: hexa(var(--blue), 0.5);
 }
 
 .item-yellow {
   composes: item;
   border: 2px solid var(--yellow);
-  background-color: rgba(var(--yellow), 0.5);
+  background-color: hexa(var(--yellow), 0.5);
 }
 
 .item-green {
   composes: item;
   border: 2px solid var(--green);
-  background-color: rgba(var(--green), 0.5);
+  background-color: hexa(var(--green), 0.5);
 }

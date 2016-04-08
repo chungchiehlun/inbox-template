@@ -76,7 +76,10 @@
   }
 }
 
-.sender-label {
+.paperclip {
   margin-right: 10px;
   font-size: 14px;
+  &:before{
+    font-awesome: paperclip;
+  }
 }

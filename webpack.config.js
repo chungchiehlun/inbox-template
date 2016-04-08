@@ -5,6 +5,7 @@ var webpack = require('webpack'),
 
 var precss = require('precss'),
   cssnext = require('postcss-cssnext'),
+  colorhexa = require('postcss-color-hexa'),
   fontawesome = require('postcss-font-awesome');
 
 module.exports = {
@@ -54,7 +55,7 @@ module.exports = {
       loader: "url?limit=10000&mimetype=image/svg+xml"
     }]
   },
-  postcss: [precss, cssnext, fontawesome],
+  postcss: [precss, cssnext, fontawesome, colorhexa],
   // Use the plugin to specify the resulting filename (and add needed behavior to the compiler)
   plugins: [
     new ExtractTextPlugin("bundle.css", {

@@ -10,10 +10,10 @@ const Message = () => (
           <h5>Zlatan Ibrahimovic</h5><span>To: <a href="#">destabiliseus@gmail.com</a></span>
         </div>
       </div>
-      <div styleName="tools">
-        <i className="fa fa-reply"></i>
-        <i className="fa fa-star-o"></i>
-        <i className="fa fa-trash-o"></i>
+      <div>
+        <i styleName="reply"></i>
+        <i styleName="star-o"></i>
+        <i styleName="trash-o"></i>
       </div>
     </div>
     <h2>The challenge of learning Swedish</h2>

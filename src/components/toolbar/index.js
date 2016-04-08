@@ -12,7 +12,7 @@ const Toolbar = () => (
     <div>
       <input styleName="search" type="search" defaultValue="#Swedish" placeholder="Type to search"/>
       <button styleName="button">
-        <i className="fa fa-search" />
+        <i styleName="searchBtn" />
       </button>
     </div>
   </div>

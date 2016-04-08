@@ -42,14 +42,34 @@
   }
 }
 
-.tools {
-  i {
-    margin-left: 20px;
-    cursor: pointer;
-    transition: opacity 300ms ease-in-out;
-    color: var(--midnight);
-    &:hover {
-      opacity: 0.6;
-    }
+
+.icon {
+  margin-left: 20px;
+  cursor: pointer;
+  transition: opacity 300ms ease-in-out;
+  color: var(--midnight);
+  &:hover {
+    opacity: 0.6;
+  }
+}
+
+.reply {
+  composes: icon;
+  &:before {
+    font-awesome: reply;
+  }
+}
+
+.star-o {
+  composes: icon;
+  &:before {
+    font-awesome: star-o;
+  }
+}
+
+.trash-o {
+  composes: icon;
+  &:before {
+    font-awesome: trash-o;
   }
 }
