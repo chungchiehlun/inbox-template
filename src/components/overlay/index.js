@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component, PropTypes } from 'react'
 import CSSModules from 'react-css-modules'
 import styles from './index.css'
 import { connect } from 'react-redux'

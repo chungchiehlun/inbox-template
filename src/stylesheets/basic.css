@@ -11,6 +11,10 @@ ul {
   list-style: none;
 }
 
+i {
+  font-style: normal; 
+}
+
 a {
   transition: color 200ms ease-in-out;
   text-decoration: none;

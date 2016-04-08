@@ -18,23 +18,23 @@ class Sidebar extends Component {
       <aside styleName="sidebar">
         <nav>
           <button styleName="compose" onClick={ this.props.openOverlay }>
-            <i className="fa fa-pencil" />
+            <i styleName="pencil" />
           </button>
           <ul styleName="categories">
             <li>
               <div styleName="notification">
                 <span>5</span>
               </div>
-              <i className="fa fa-inbox" style={{ opacity: 1 }}/>
+              <i styleName="inbox" style={{ opacity: 1 }}/>
             </li>
             <li>
-              <i className="fa fa-star" />
+              <i styleName="star" />
             </li>
             <li>
-              <i className="fa fa-send" />
+              <i styleName="send" />
             </li>
             <li>
-              <i className="fa fa-trash" />
+              <i styleName="trash" />
             </li>
           </ul>
         </nav>

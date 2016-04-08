@@ -6,6 +6,8 @@ import Sidebar from 'components/sidebar'
 import Inbox from 'components/inbox'
 import Message from 'components/message'
 import Overlay from 'components/overlay'
+import 'normalize.css/normalize.css'
+import 'font-awesome/css/font-awesome.css'
 import 'stylesheets/basic.css'
 
 const App = () => (

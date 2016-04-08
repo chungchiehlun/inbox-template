@@ -4,7 +4,8 @@ var webpack = require('webpack'),
   ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 var precss = require('precss'),
-  cssnext = require('postcss-cssnext');
+  cssnext = require('postcss-cssnext'),
+  fontawesome = require('postcss-font-awesome');
 
 module.exports = {
   // The standard entry point and output config
@@ -29,16 +30,31 @@ module.exports = {
       loader: 'babel'
     }, {
       test: /\.css$/,
-      loader: ExtractTextPlugin.extract('style-loader', 'css-loader?modules&importLoaders=1&localIdentName=[name]_[local]_[hash:base64:4]!postcss-loader')
+      loader: ExtractTextPlugin.extract('style-loader', 'css-loader?modules&importLoaders=1&localIdentName=[local][hash:base64:4]!postcss-loader')
     }, {
-      test: /\.png$/,
-      loader: 'url-loader'
+      test: /\.(jpg|png|svg)$/,
+      loader: 'url'
     }, {
-      test: /\.svg$/,
-      loader: 'url-loader'
+      test: /\.json$/,
+      loader: 'json'
+    }, {
+      test: /\.woff(\?v=\d+\.\d+\.\d+)?$/,
+      loader: "url?limit=10000&mimetype=application/font-woff"
+    }, {
+      test: /\.woff2(\?v=\d+\.\d+\.\d+)?$/,
+      loader: "url?limit=10000&mimetype=application/font-woff"
+    }, {
+      test: /\.ttf(\?v=\d+\.\d+\.\d+)?$/,
+      loader: "url?limit=10000&mimetype=application/octet-stream"
+    }, {
+      test: /\.eot(\?v=\d+\.\d+\.\d+)?$/,
+      loader: "file"
+    }, {
+      test: /\.svg(\?v=\d+\.\d+\.\d+)?$/,
+      loader: "url?limit=10000&mimetype=image/svg+xml"
     }]
   },
-  postcss: [precss, cssnext],
+  postcss: [precss, cssnext, fontawesome],
   // Use the plugin to specify the resulting filename (and add needed behavior to the compiler)
   plugins: [
     new ExtractTextPlugin("bundle.css", {

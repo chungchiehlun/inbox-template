@@ -42,16 +42,54 @@
   li {
     position: relative;
   }
-  i {
-    margin-bottom: 30px;
-    cursor: pointer;
-    transition: opacity 300ms ease-in-out;
-    opacity: 0.6;
-    color: white;
-    font-size: 20px;
-    &:hover {
-      opacity: 1;
-    }
+}
+
+.icon {
+  display: inline-block;
+  margin-bottom: 30px;
+  cursor: pointer;
+  transition: opacity 300ms ease-in-out;
+  opacity: 0.6;
+  color: white;
+  font-size: 20px;
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.pencil {
+  composes: icon;
+  margin-bottom: 0;
+  &:before {
+    font-awesome: pencil;
+  }
+}
+
+.inbox {
+  composes: icon;
+  &:before {
+    font-awesome: inbox;
+  }
+}
+
+.star {
+  composes: icon;
+  &:before {
+    font-awesome: star;
+  }
+}
+
+.send {
+  composes: icon;
+  &:before {
+    font-awesome: send;
+  }
+}
+
+.trash{
+  composes: icon;
+  &:before {
+    font-awesome: trash;
   }
 }
 

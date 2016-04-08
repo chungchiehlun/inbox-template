@@ -6,10 +6,6 @@
   border-radius: 50%;
 }
 
-/*.item {
-  margin: 20px 0;
-}*/
-
 .item-red {
   composes: item;
   border: 2px solid var(--love);

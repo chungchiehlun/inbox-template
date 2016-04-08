@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
+    "dev": "node devServer.js",
     "test": "node_modules/karma/bin/karma start",
     "lint": "eslint src --ignore-pattern *.spec.js"
   },
@@ -26,6 +26,8 @@
     "isparta-loader": "^2.0.0",
     "jasmine-core": "^2.4.1",
     "json-loader": "^0.5.4",
+    "file-loader": "^0.8.5",
+    "url-loader": "^0.5.7",
     "karma": "^0.13.22",
     "karma-chrome-launcher": "^0.2.3",
     "karma-coverage": "^0.5.5",
@@ -36,17 +38,19 @@
     "null-loader": "^0.1.1",
     "postcss-cssnext": "^2.5.1",
     "postcss-custom-properties": "^5.0.0",
+    "postcss-font-awesome": "^0.2.1",
     "postcss-import": "^8.0.2",
     "postcss-loader": "^0.8.2",
     "react-addons-test-utils": "^15.0.0",
     "style-loader": "^0.13.0",
-    "url-loader": "^0.5.7",
     "webpack": "^1.12.2",
     "webpack-dev-middleware": "^1.6.0",
     "webpack-hot-middleware": "^2.5.0"
   },
   "dependencies": {
     "express": "^4.13.3",
+    "font-awesome": "^4.5.0",
+    "normalize.css": "^4.0.0",
     "postcss-cssnext": "^2.5.2",
     "precss": "^1.4.0",
     "react": "^15.0.0",
