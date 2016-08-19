@@ -1,7 +1,5 @@
-## Mail Template
-<img src="https://travis-ci.org/chungchiehlun/Mail-Template.svg?branch=master" />
-
-I saw an elegant mail template from [codepen](http://codepen.io/romamilkovic/full/PPyvXa/) and restructured it with **React**, **Redux**, **CSS Modules** and **PostCSS** and planed to make it more dynamic and interactive.
+## Inbox Template
+I saw an elegant inbox template from [codepen](http://codepen.io/romamilkovic/full/PPyvXa/) and restructured it with **React**, **Redux**, **CSS Modules** and **PostCSS** and planed to make it more dynamic and interactive.
 
 <img src="./snapshot.png" />
 
