@@ -7,7 +7,7 @@ I saw an elegant inbox template from [codepen](http://codepen.io/romamilkovic/fu
 ### Todo List for Enhancement
 - [x] Test app with [Karma](https://karma-runner.github.io/0.13/index.html),  [Enzyme](https://github.com/airbnb/enzyme) and Jasmine.
 - [x] [Travis CI](https://travis-ci.org/)
-- [ ] [Codecev](https://codecov.io/)
+- [ ] [Codecov](https://codecov.io/)
 - [ ] [ESLint](http://eslint.org/)
 
 ### Instruction
