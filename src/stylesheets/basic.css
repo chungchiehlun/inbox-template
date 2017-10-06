@@ -12,7 +12,7 @@ ul {
 }
 
 i {
-  font-style: normal; 
+  font-style: normal;
 }
 
 a {
@@ -37,7 +37,7 @@ body {
   min-height: 100vh;
   color: #333333;
   background-color: var(--blue-grey);
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
 
   align-items: center;
   justify-content: center;

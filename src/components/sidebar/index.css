@@ -23,7 +23,7 @@
   border-radius: 3px;
   background-color: var(--blue);
   font-size: 20px;
-  composes: defaultBtn from "stylesheets/button.css";
+  composes: defaultBtn from '../../stylesheets/button.css';
   &:hover {
     background-color: var(--blue);
   }
@@ -117,22 +117,22 @@
 
 .label-red {
   composes: label;
-  composes: item-red from "stylesheets/messageLabel.css";
+  composes: item-red from '../../stylesheets/messageLabel.css';
 }
 
 .label-blue {
   composes: label;
-  composes: item-blue from "stylesheets/messageLabel.css";
+  composes: item-blue from '../../stylesheets/messageLabel.css';
 }
 
 .label-yellow {
   composes: label;
-  composes: item-yellow from "stylesheets/messageLabel.css";
+  composes: item-yellow from '../../stylesheets/messageLabel.css';
 }
 
 .label-green {
   composes: label;
-  composes: item-green from "stylesheets/messageLabel.css";
+  composes: item-green from '../../stylesheets/messageLabel.css';
 }
 
 .user-profile {

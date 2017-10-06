@@ -50,19 +50,19 @@
 }
 
 .label-red {
-  composes: item-red from "stylesheets/messageLabel.css";
+  composes: item-red from '../../stylesheets/messageLabel.css';
 }
 
 .label-blue {
-  composes: item-blue from "stylesheets/messageLabel.css";
+  composes: item-blue from '../../stylesheets/messageLabel.css';
 }
 
 .label-yellow {
-  composes: item-yellow from "stylesheets/messageLabel.css";
+  composes: item-yellow from '../../stylesheets/messageLabel.css';
 }
 
 .label-green {
-  composes: item-green from "stylesheets/messageLabel.css";
+  composes: item-green from '../../stylesheets/messageLabel.css';
 }
 
 .sender-name {

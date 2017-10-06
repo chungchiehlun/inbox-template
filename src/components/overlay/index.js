@@ -1,22 +1,8 @@
-import React, { Component, PropTypes } from 'react'
-import CSSModules from 'react-css-modules'
-import styles from './index.css'
+import React, { Component } from 'react'
 import { connect } from 'react-redux'
+import './index.css'
 
-@connect((state) => {
-  return {
-    overlayIsOpen: state.overlay
-  }
-}, (dispatch) =>{
-  return {
-    closeOverlay: () => dispatch({ type: 'CLOSE_OVERLAY' })
-  }
-})
-@CSSModules(styles)
 class Overlay extends Component {
-  static propTypes = {
-    openOverlay: PropTypes.func
-  }
   render() {
     return(
       <div styleName={ (this.props.overlayIsOpen ) ? 'overlay-active' : 'overlay' }>
@@ -38,4 +24,14 @@ class Overlay extends Component {
   }
 }
 
-export default Overlay
+export default connect(
+  (state) => {
+    return {
+      overlayIsOpen: state.overlay
+    }
+  }, (dispatch) =>{
+    return {
+      closeOverlay: () => dispatch({ type: 'CLOSE_OVERLAY' })
+    }
+  }
+)(Overlay)

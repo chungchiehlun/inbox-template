@@ -58,7 +58,7 @@
   background-color: var(--love);
   font-size: 12px;
   font-weight: 600;
-  composes: defaultBtn from "stylesheets/button.css";
+  composes: defaultBtn from '../../stylesheets/button.css';
   &:hover {
     background-color: var(--love);
   }

@@ -72,7 +72,7 @@
   color: white;
   border-radius: 3px;
   background-color: var(--blue);
-  composes: defaultBtn from 'stylesheets/button';
+  composes: defaultBtn from '../../stylesheets/button.css';
   &:hover {
     background-color: var(--blue);
   }
@@ -98,7 +98,7 @@
     right: 0px;
     width: 15px;
     height: 2px;
-    content: "";
+    content: '';
     transform: rotate(45deg);
     background-color: #333333;
   }
@@ -108,7 +108,7 @@
     right: 0px;
     width: 15px;
     height: 2px;
-    content: "";
+    content: '';
     transform: rotate(-45deg);
     background-color: #333333;
   }

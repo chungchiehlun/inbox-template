@@ -1,13 +1,12 @@
-import React, { Component } from 'react'
-import CSSModules from 'react-css-modules'
-import styles from './index.css'
+import React from 'react'
+import './index.css'
 
 const Message = () => (
   <div styleName="message">
     <div styleName="info">
       <div styleName="from"><img src="http://blog.sportafolio.com/wp-content/uploads/2015/08/zlatan.jpg" alt="img"/>
         <div styleName="sender">
-          <h5>Zlatan Ibrahimovic</h5><span>To: <a href="#">destabiliseus@gmail.com</a></span>
+          <h5>Zlatan Ibrahimovic</h5><span>To: <a>destabiliseus@gmail.com</a></span>
         </div>
       </div>
       <div>
@@ -25,4 +24,4 @@ const Message = () => (
   </div>
 )
 
-export default CSSModules(Message, styles)
+export default Message

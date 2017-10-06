@@ -1,13 +1,12 @@
-import React, { Component } from 'react'
-import CSSModules from 'react-css-modules'
-import styles from './index.css'
+import React from 'react'
+import './index.css'
 
 const Inbox = () => (
   <ul styleName="inbox">
     <li styleName="inbox-item">
       <div styleName="inbox-sender">
         <div styleName="sender-name">
-          <a href="#">Jeremy Boateng
+          <a>Jeremy Boateng
           </a>
         </div>
         <div styleName="sender-date">
@@ -29,7 +28,7 @@ const Inbox = () => (
     <li styleName="inbox-item">
       <div styleName="inbox-sender">
         <div styleName="sender-name">
-          <a href="#">Jeremy Boateng
+          <a>Jeremy Boateng
           </a>
         </div>
         <div styleName="sender-date">
@@ -51,7 +50,7 @@ const Inbox = () => (
     <li styleName="inbox-item">
       <div styleName="inbox-sender">
         <div styleName="sender-name">
-          <a href="#">Marko Handanovic
+          <a>Marko Handanovic
           </a>
         </div>
         <div styleName="sender-date">
@@ -74,7 +73,7 @@ const Inbox = () => (
     <li styleName="inbox-item">
       <div styleName="inbox-sender">
         <div styleName="sender-name">
-          <a href="#">Zlatan Ibrahimovic
+          <a>Zlatan Ibrahimovic
           </a>
         </div>
         <div styleName="sender-date">
@@ -96,4 +95,4 @@ const Inbox = () => (
   </ul>
 )
 
-export default CSSModules(Inbox, styles)
+export default Inbox

@@ -1,18 +1,8 @@
-import React, { Component, PropTypes } from 'react'
-import CSSModules from 'react-css-modules'
-import styles from './index.css'
+import React, { Component } from 'react'
 import { connect } from 'react-redux'
+import './index.css'
 
-@connect(null, (dispatch) => {
-  return {
-    openOverlay: () => dispatch({ type: 'OPEN_OVERLAY' })
-  }
-})
-@CSSModules(styles)
 class Sidebar extends Component {
-  static propTypes = {
-    openOverlay: PropTypes.func
-  }
   render() {
     return (
       <aside styleName="sidebar">
@@ -53,4 +43,8 @@ class Sidebar extends Component {
   }
 }
 
-export default Sidebar
+export default connect(null, (dispatch) => {
+  return {
+    openOverlay: () => dispatch({ type: 'OPEN_OVERLAY' })
+  }
+})(Sidebar)

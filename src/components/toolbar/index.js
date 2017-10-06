@@ -1,6 +1,5 @@
-import React, { Component } from 'react'
-import CSSModules from 'react-css-modules'
-import styles from './index.css'
+import React from 'react'
+import './index.css'
 
 const Toolbar = () => (
   <div styleName="toolbar">
@@ -18,4 +17,4 @@ const Toolbar = () => (
   </div>
 )
 
-export default CSSModules(Toolbar, styles)
+export default Toolbar
