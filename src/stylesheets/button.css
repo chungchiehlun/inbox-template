@@ -1,7 +1,0 @@
-@import './color.css';
-
-.defaultBtn {
-  border: none;
-  outline: none;
-  background: var(--grey);
-}

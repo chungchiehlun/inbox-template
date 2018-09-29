@@ -1,30 +1,30 @@
-import React, { Component } from 'react'
-import { connect } from 'react-redux'
-import './index.css'
+import React, { Component } from "react";
+import { connect } from "react-redux";
+import "./index.module.css";
 
 class Sidebar extends Component {
   render() {
     return (
       <aside styleName="sidebar">
         <nav>
-          <button styleName="compose" onClick={ this.props.openOverlay }>
-            <i styleName="pencil" />
+          <button styleName="compose" onClick={this.props.openOverlay}>
+            <i className="fa fa-pencil" />
           </button>
           <ul styleName="categories">
             <li>
               <div styleName="notification">
                 <span>5</span>
               </div>
-              <i styleName="inbox" style={{ opacity: 1 }}/>
+              <i className="fa fa-inbox" styleName="icon-is-active" />
             </li>
             <li>
-              <i styleName="star" />
+              <i className="fa fa-star" />
             </li>
             <li>
-              <i styleName="send" />
+              <i className="fa fa-send" />
             </li>
             <li>
-              <i styleName="trash" />
+              <i className="fa fa-trash" />
             </li>
           </ul>
         </nav>
@@ -39,12 +39,15 @@ class Sidebar extends Component {
           <i className="fa fa-sign-out" />
         </div>
       </aside>
-    )
+    );
   }
 }
 
-export default connect(null, (dispatch) => {
-  return {
-    openOverlay: () => dispatch({ type: 'OPEN_OVERLAY' })
+export default connect(
+  null,
+  dispatch => {
+    return {
+      openOverlay: () => dispatch({ type: "OPEN_OVERLAY" })
+    };
   }
-})(Sidebar)
+)(Sidebar);
