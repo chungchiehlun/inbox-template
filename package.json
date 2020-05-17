@@ -4,17 +4,17 @@
   "dependencies": {
     "font-awesome": "^4.7.0",
     "normalize.css": "^8.0.0",
-    "react": "^16.5.2",
-    "react-dom": "^16.5.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
     "react-redux": "^5.0.7",
     "redux": "^4.0.0",
-    "starter-scripts": "^1.1.1"
+    "starter-scripts": "^3.4.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject",
+    "start": "starter-scripts start",
+    "build": "starter-scripts build",
+    "test": "starter-scripts test --env=jsdom",
+    "eject": "starter-scripts eject",
     "deploy": "yarn run build && source scripts/deploy.sh"
   },
   "husky": {
@@ -24,13 +24,24 @@
   },
   "lint-staged": {
     "*.{js,json,css,md}": [
-      "prettier --write",
-      "git add"
+      "prettier --write"
     ]
   },
   "devDependencies": {
-    "husky": "^1.0.1",
-    "lint-staged": "^7.3.0",
-    "prettier": "^1.14.3"
+    "husky": "^4.2.5",
+    "lint-staged": "^10.2.2",
+    "prettier": "^2.0.5"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
