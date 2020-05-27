@@ -5,25 +5,25 @@
 }
 
 .item-red {
-  composes: item;
+  @extend .item;
   border: 2px solid var(--red);
   background-color: var(--red-alpha);
 }
 
 .item-blue {
-  composes: item;
+  @extend .item;
   border: 2px solid var(--blue);
   background-color: var(--blue-alpha);
 }
 
 .item-yellow {
-  composes: item;
+  @extend .item;
   border: 2px solid var(--yellow);
   background-color: var(--yellow-alpha);
 }
 
 .item-green {
-  composes: item;
+  @extend .item;
   border: 2px solid var(--green);
   background-color: var(--green-alpha);
 }

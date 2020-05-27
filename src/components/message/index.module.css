@@ -25,16 +25,19 @@
 }
 
 .sender {
+  @apply text-sm;
+  @apply text-black;
   display: flex;
   margin-left: 10px;
   flex-flow: column wrap;
-  & h5 {
-    margin: 0;
-  }
-  & span {
-    margin-top: 5px;
-    font-size: 12px;
-  }
+}
+
+.sender-name {
+  @apply font-bold;
+}
+
+.sender-email {
+  @apply text-blue-500;
 }
 
 .icon {
@@ -45,4 +48,16 @@
   &:hover {
     opacity: 0.6;
   }
+}
+
+.title {
+  @apply text-xl;
+  @apply font-semibold;
+  @apply my-5;
+}
+
+.subtitle {
+  @apply text-lg;
+  @apply font-semibold;
+  @apply my-4;
 }

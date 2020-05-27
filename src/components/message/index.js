@@ -1,5 +1,6 @@
 import React from "react";
 import "./index.module.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Message = () => (
   <div styleName="message">
@@ -11,25 +12,26 @@ const Message = () => (
           alt="img"
         />
         <div styleName="sender">
-          <h5>Jay Chung</h5>
-          <span>
-            To: <a>wuceh14678@gmail.com</a>
-          </span>
+          <div styleName="sender-name">Jay Chung</div>
+          <div>
+            <span>{`To: `}</span>
+            <span styleName="sender-email">wuceh14678@gmail.com</span>
+          </div>
         </div>
       </div>
       <div>
-        <i className="fa fa-reply" styleName="icon" />
-        <i className="fa fa-star-o" styleName="icon" />
-        <i className="fa fa-trash-o" styleName="icon" />
+        <FontAwesomeIcon icon={["fas", "reply"]} styleName="icon" />
+        <FontAwesomeIcon icon={["far", "star"]} styleName="icon" />
+        <FontAwesomeIcon icon={["far", "trash-alt"]} styleName="icon" />
       </div>
     </div>
-    <h2>The challenge of learning Swedish</h2>
+    <div styleName="title">The challenge of learning Swedish</div>
     <p>
       Most Swedes speak English – which certainly helps a first-time visitor in
       Stockholm. But it makes learning Swedish somewhat harder, according to
       former expat Charlotte West.
     </p>
-    <h3>Newly arrived</h3>
+    <div styleName="subtitle">Newly arrived</div>
     <p>
       I arrived in Sweden in August 2002 armed with Prisma’s Abridged
       English-Swedish and Swedish-English Dictionary and an eight-week intensive
@@ -37,7 +39,7 @@ const Message = () => (
       Four years later, the dog-eared dictionary had grammar notes scribbled in
       the margins and I had become a fluent Swedish speaker, more or less.
     </p>
-    <h2>Swedish Word of the Day</h2>
+    <div styleName="title">Swedish Word of the Day</div>
     <p>
       A big part of the reason my spoken Swedish got good is that I quickly met
       Swedish friends who were willing to help me practise. One of our

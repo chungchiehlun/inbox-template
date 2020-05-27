@@ -1,52 +1,7 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto");
-
-* {
-  box-sizing: border-box;
-}
-
-ol,
-ul {
-  padding: 0;
-  list-style: none;
-}
-
-i {
-  font-style: normal;
-}
-
-a {
-  transition: color 200ms ease-in-out;
-  text-decoration: none;
-  color: var(--blue);
-  font-weight: 600;
-  &:hover {
-    color: var(--blue);
-  }
-  &:active {
-    color: var(--blue);
-  }
-}
-
-img {
-  max-width: 100%;
-}
+@tailwind base;
+/* @tailwind components; */
+/* @tailwind utilities; */
 
 body {
-  display: flex;
-  min-height: 100vh;
-  color: #333333;
-  background-color: var(--blue-grey);
-  font-family: "Open Sans", sans-serif;
-
-  align-items: center;
-  justify-content: center;
-}
-
-p {
-  color: var(--paragraph);
-}
-
-button {
-  border: none;
-  outline: none;
+  font-family: "Roboto", sans-serif;
 }

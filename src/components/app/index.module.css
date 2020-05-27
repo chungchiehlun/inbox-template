@@ -1,14 +1,12 @@
 .window {
   width: 1170px;
-  background-color: white;
-  box-shadow: 0px 8px 20px hexa(var(--midnight), 0.4);
-
-  display: flex;
-  flex-direction: column;
+  margin: 0 auto;
+  @apply flex;
+  @apply flex-col;
+  @apply shadow;
 }
 
 .content {
-  position: relative;
-
-  display: flex;
+  @apply w-full;
+  @apply flex;
 }

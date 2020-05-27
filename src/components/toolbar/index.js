@@ -1,5 +1,6 @@
 import React from "react";
 import "./index.module.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Toolbar = () => (
   <div styleName="toolbar">
@@ -8,7 +9,7 @@ const Toolbar = () => (
       <li styleName="item" />
       <li styleName="item" />
     </ul>
-    <div>
+    <div styleName="search-container">
       <input
         styleName="search"
         type="search"
@@ -16,7 +17,7 @@ const Toolbar = () => (
         placeholder="Type to search"
       />
       <button styleName="searchBtn">
-        <i className="fa fa-search" />
+        <FontAwesomeIcon icon="search" />
       </button>
     </div>
   </div>

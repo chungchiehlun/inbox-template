@@ -1,17 +1,11 @@
 .sidebar {
-  display: flex;
   padding-top: 20px;
-  background-color: var(--midnight);
-  /*
-    flex items attribute:
-    flex-grow : default = 0
-    flex-shrink : default = 1
-    flex-basis : default = auto
-  */
+  display: flex;
   flex: 1 0 100px;
   align-items: center;
   justify-content: space-between;
   flex-flow: column wrap;
+  @apply bg-gray-900;
 }
 
 .compose {
@@ -35,20 +29,21 @@
   justify-content: center;
   align-items: center;
   flex-flow: column wrap;
-  & li {
+  li {
     position: relative;
   }
-  & i {
-    display: inline-block;
-    margin-bottom: 30px;
-    cursor: pointer;
-    transition: opacity 300ms ease-in-out;
-    opacity: 0.6;
-    color: white;
-    font-size: 20px;
-    &:hover {
-      opacity: 1;
-    }
+}
+
+.icon {
+  display: inline-block;
+  margin-bottom: 30px;
+  cursor: pointer;
+  transition: opacity 300ms ease-in-out;
+  opacity: 0.6;
+  color: white;
+  font-size: 20px;
+  &:hover {
+    opacity: 1;
   }
 }
 
@@ -79,22 +74,22 @@
 
 .label-red {
   composes: label;
-  composes: item-red from "../../stylesheets/messageLabel.css";
+  composes: item-red from global;
 }
 
 .label-blue {
   composes: label;
-  composes: item-blue from "../../stylesheets/messageLabel.css";
+  composes: item-blue from global;
 }
 
 .label-yellow {
   composes: label;
-  composes: item-yellow from "../../stylesheets/messageLabel.css";
+  composes: item-yellow from global;
 }
 
 .label-green {
   composes: label;
-  composes: item-green from "../../stylesheets/messageLabel.css";
+  composes: item-green from global;
 }
 
 .user-profile {

@@ -30,51 +30,40 @@
 .inbox-sender {
   display: flex;
   font-size: 12px;
-
   flex-flow: row wrap;
   justify-content: space-between;
 }
 
 .inbox-title {
   display: flex;
-
-  align-items: center;
   flex-flow: row-reverse wrap;
+  align-items: center;
   justify-content: space-between;
-  & h4 {
-    margin: 0;
-    margin-top: 10px;
-  }
+  @apply text-base;
+  @apply font-bold;
+  @apply text-gray-900;
+  @apply my-1;
 }
 
-.label-red {
-  composes: item-red from "../../stylesheets/messageLabel.css";
-}
-
-.label-blue {
-  composes: item-blue from "../../stylesheets/messageLabel.css";
-}
-
-.label-yellow {
-  composes: item-yellow from "../../stylesheets/messageLabel.css";
-}
-
-.label-green {
-  composes: item-green from "../../stylesheets/messageLabel.css";
+.inbox-content {
+  @apply text-base;
+  @apply text-gray-600;
+  @apply leading-none;
 }
 
 .sender-name {
-  font-weight: 600;
+  @apply text-xs;
+  @apply font-semibold;
+  @apply text-blue-500;
 }
 
 .sender-date {
-  font-weight: 600;
-  & span {
-    opacity: 0.5;
-  }
+  @apply text-xs;
+  @apply text-gray-500;
 }
 
 .sender-label {
   margin-right: 10px;
   font-size: 14px;
+  @apply text-gray-600;
 }
